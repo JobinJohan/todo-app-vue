@@ -8,11 +8,6 @@ import todoAdd from "./components/todo-add.vue"
 import todoList from "./components/todo-list.vue"
 import "./assets/main.css" 
 
-// Liste de todo: pour chaque todo on affichera le composant vue todo
-const listeDeTodo = reactive(new Array())
-
-listeDeTodo.push("test")
-listeDeTodo.push("test2")
 </script>
 
 <template>
@@ -21,7 +16,7 @@ listeDeTodo.push("test2")
 <div id="main">
     <todoHeader></todoHeader>
     <todoAdd> </todoAdd>
-    <todoList :listeDeTodo="listeDeTodo"></todoList>
+    <todoList></todoList>
 </div>
 
 </template>
